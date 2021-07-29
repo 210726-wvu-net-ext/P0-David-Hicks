@@ -4,11 +4,12 @@ echo "Please enter your grade (percentage between 0-100): "
 read grade
 if (( $grade % 2 ))
 then
-    echo "Your grade is even"
-else
     echo "Your grade is odd"
+else
+    echo "Your grade is even"
 fi
 
+echo ", and your grade is "
 if (( $grade < 40 ))
 then
     echo "F"
